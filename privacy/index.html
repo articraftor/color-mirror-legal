@@ -33,23 +33,24 @@
           <h2>Information that stays on your device</h2>
           <p>Color Mirror keeps the following information locally so the app can work:</p>
           <ul>
-            <li>Your four onboarding choices about intended use and photo conditions.</li>
-            <li>A selected or captured photo while the analysis screen is active.</li>
-            <li>A small temporary working image, face position, and derived color features.</li>
-            <li>Finished result history containing the season label, explanation, and date.</li>
+            <li>Your five onboarding choices about recurring use, decision friction, and first-photo conditions.</li>
+            <li>A selected or captured face or item photo while its working screen is active.</li>
+            <li>A small temporary working image, face position or tapped sample position, and derived color features.</li>
+            <li>Complete finished baseline cards and their per-run conditions.</li>
+            <li>Saved item-color decisions containing your note, category, sampled hex color, nearest palette swatches, cautious comparison, and date.</li>
             <li>Onboarding completion, appearance preference, and review-prompt timing.</li>
           </ul>
-          <p>The source photo and temporary working image are not stored in result history. Temporary image files may remain in storage managed by iOS until the system clears its cache or the app is deleted. A photo selected from your library remains under your control in the Photos app.</p>
+          <p>Source photos, photo URIs, face bounds, tap positions, and temporary working images are not stored in Color Journal. Temporary image files may remain in storage managed by iOS until the system clears its cache or the app is deleted. A photo selected from your library remains under your control in the Photos app.</p>
         </section>
 
         <section>
           <h2>Information sent to service providers</h2>
           <h3>Product analytics</h3>
-          <p>We use PostHog to understand whether people can complete onboarding, reach the paywall, and receive a result. PostHog receives a random identifier, event names, onboarding beat identifiers and numbers, and technical details such as app version, operating-system version, device class, screen size, and session information.</p>
-          <p>We do not send onboarding answer values, photos, face data, sampled colors, season results, names, email addresses, or advertising identifiers. Session replay, automatic lifecycle capture, surveys, remote feature flags, error autocapture, and GeoIP enrichment are disabled. The PostHog project is configured to discard client IP data. We do not use this information for advertising or tracking across other companies' apps or websites.</p>
+          <p>We use PostHog to understand whether people can complete onboarding and a free baseline, consider membership, use item checks, reopen Color Journal, view a monthly edit, and create a controlled new baseline. PostHog receives a random identifier, allowlisted event names, onboarding beat identifiers and numbers, an item category when a check is saved, and technical details such as app version, operating-system version, device class, screen size, and session information.</p>
+          <p>We do not send onboarding answer values, photos, face data, tap positions, sampled colors, Journal notes, season results, names, email addresses, or advertising identifiers. Session replay, automatic lifecycle capture, surveys, remote feature flags, error autocapture, and GeoIP enrichment are disabled. The PostHog project is configured to discard client IP data. We do not use this information for advertising or tracking across other companies' apps or websites.</p>
 
           <h3>Purchases</h3>
-          <p>We use RevenueCat to load the one-time unlock, validate the purchase, unlock premium access, report transaction status, and restore purchases. RevenueCat receives an anonymous customer identifier, product and entitlement information, Apple receipt or transaction information, and technical app or device information.</p>
+          <p>We use RevenueCat to load annual and monthly memberships, validate active access, report trial, renewal, expiration, cancellation, and refund status, and restore purchases. RevenueCat receives an anonymous customer identifier, product and entitlement information, Apple receipt or transaction information, and technical app or device information.</p>
           <p>Color Mirror does not create an account or send RevenueCat your name, email address, photo, onboarding answers, or result. Apple processes App Store payments. Articraftor LLC does not receive your payment-card number or Apple Account password.</p>
         </section>
 
@@ -65,7 +66,7 @@
 
         <section>
           <h2>Retention and deletion</h2>
-          <p>Settings includes <strong>Delete local history and choices</strong>. After confirmation, it removes onboarding choices and progress, finished result history, local app settings, scheduled reminders, and the local analytics identity.</p>
+          <p>Settings includes <strong>Delete local history and choices</strong>. After confirmation, it removes onboarding choices and progress, baseline and item-color Journal data, local app settings, scheduled reminders, and the local analytics identity.</p>
           <p>Deleting Color Mirror also removes its app database, preferences, SDK storage, and app cache from that device. Apple may retain transaction records as required to operate the App Store. PostHog and RevenueCat may retain processor records under their service and legal obligations.</p>
           <p>To request deletion of analytics or purchase-service records associated with your anonymous installation, email <a href="mailto:articraftor@gmail.com?subject=Color%20Mirror%20privacy%20request">articraftor@gmail.com</a>. Selectable anonymous support IDs appear in Settings. We will use available provider controls to process the request, subject to records that must be retained for security, financial, fraud-prevention, or legal reasons. We will never ask you to email your selfie or payment credentials.</p>
         </section>
